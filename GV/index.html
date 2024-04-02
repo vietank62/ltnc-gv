@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons/themify-icons.css">
+    <title>GiangVien</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header-container">
+            <div class="header-sinhvien">
+                <!-- <img class="logo-sv" src="./assets/img/R.jpg" alt=""> -->
+                <a href="#">GIẢNG VIÊN</a>
+            </div>
+            <p class="header-title">Trang Giảng Viên</p>
+            <div class="header-user-form">
+                <img class=" logo-bk" src="./assets/img/Logo-DH-Bach-Khoa-HCMUT.webp" alt="user">
+                <!-- <a href="#" class="user-info">Nguyễn Trọng Tài</a> -->
+                <!-- <i class="head-icon-menu ti-menu"></i> -->
+                <ul class="user-menu">
+                    <li><a href="#">Thông tin cá nhân</a></li>
+                    <li><a href="#">Đăng xuất</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="body-main">
+            <!-- opensidebar -->
+            <div  class="sidebar-container sidebar-open">
+                <div class="sidebar-info">
+                    <img class="avatar" src="./assets/img/avatar.jpg" alt="">
+                    <h3 class="Name hiden-mobile">Nguyễn Trọng Tài</h3>
+                </div>
+                <ul class="sidebar-menu PC-sidebar">
+                    <li><a class="hiden-mobile" href="#"><i class="icon-sidebar ti-user"></i>Giảng Viênn</a></li>
+                    <li><a class="hiden-mobile" href="#"><i class="icon-sidebar  ti-bookmark-alt"></i>Lịch giảng dạy</a></li>
+                    <li><a class="hiden-mobile" href="#"><i class="icon-sidebar  ti-book"></i>Quản lý khoá học</a></li>
+                    <li><a class="hiden-mobile" href="#"><i class="icon-sidebar  ti-pencil-alt"></i>Quản lý sinh viên</a></li>
+                    <li><a class="hiden-mobile" href="#"><i class="icon-sidebar ti-key"></i>Đăng ký lịch</a></li>
+                    <li><a class="hiden-mobile" href="#"><i class="icon-sidebar ti-bell"></i>Thông Báo</a></li>
+                    <li><a class="hiden-mobile" href="#"><i class="icon-sidebar ti-comments"></i>Tin nhắn</a></li>
+                    <li><a class="hiden-mobile" href="#"><i class="icon-sidebar ti-power-off"></i>Đăng xuất</a></li>
+                </ul>
+                <ul class="sidebar-menu mobile-sidebar">
+                    <li><a href="#"><i class="icon-sidebar ti-user"></i></a></li>
+                    <li><a href="#"><i class="icon-sidebar  ti-bookmark-alt"></i></a></li>
+                    <li><a href="#"><i class="icon-sidebar  ti-book"></i></a></li>
+                    <li><a href="#"><i class="icon-sidebar  ti-pencil-alt"></i></a></li>
+                    <li><a href="#"><i class="icon-sidebar ti-key"></i></a></li>
+                    <li><a href="#"><i class="icon-sidebar ti-bell"></i></a></li>
+                    <li><a href="#"><i class="icon-sidebar ti-comments"></i></a></li>
+                    <li><a href="#"><i class="icon-sidebar ti-power-off"></i></a></li>
+                </ul>
+                <i id="close-sb" class="iBar-menu ti-control-backward hiden-mobile" ></i>
+            </div>
+            <!-- close sidebar -->
+            <div  class="sidebar-container sidebar-close">
+                <div class="sidebar-info">
+                    <img class="avatar close" src="./assets/img/avatar.jpg" alt="">
+                </div>
+                <ul class="sidebar-menu">
+                    <li><a href="#"><i class="icon-sidebar ti-user"></i></a></li>
+                    <li><a href="#"><i class="icon-sidebar  ti-bookmark-alt"></i></a></li>
+                    <li><a href="#"><i class="icon-sidebar  ti-book"></i></a></li>
+                    <li><a href="#"><i class="icon-sidebar  ti-pencil-alt"></i></a></li>
+                    <li><a href="#"><i class="icon-sidebar ti-key"></i></a></li>
+                    <li><a href="#"><i class="icon-sidebar ti-bell"></i></a></li>
+                    <li><a href="#"><i class="icon-sidebar ti-comments"></i></a></li>
+                    <li><a href="#"><i class="icon-sidebar ti-power-off"></i></a></li>
+                </ul>
+                <i id="open-sb" class="iBar-menu ti-control-forward hiden-mobile" ></i>
+            </div>
+            <div class="wrap-content">
+
+                <div class="content-container">
+                    content
+                    
+                </div>
+                <div class="footer-container">
+                    footer
+                </div>
+
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script>
+        var  sideBarClose = document.querySelector('.sidebar-close');
+        var sideBarOpen = document.querySelector('.sidebar-open');
+        var closeBar =document.getElementById('close-sb');
+        var openBar =document.getElementById('open-sb');
+
+        closeBar.onclick = function(){
+            
+            sideBarOpen.style.display = 'none';
+            sideBarClose.style.display = 'flex';
+        }
+        openBar.onclick = function(){
+            sideBarClose.style.display = 'none';
+            sideBarOpen.style.display = 'flex';
+        }
+    </script>
+</body>
+</html>
